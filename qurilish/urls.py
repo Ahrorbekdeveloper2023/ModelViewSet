@@ -9,5 +9,7 @@ router.register('bino', QurilishBinoViewSet)
 
 
 urlpatterns = [
+    path('api-auth/', include('rest_framework.urls')),
+
     path('api/v1/', include(router.urls)),
 ]
